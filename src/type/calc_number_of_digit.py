@@ -1,2 +1,17 @@
 def calc_number_of_digit(num):
-    return 1
+
+    cnt=0
+
+    #整数判定関数
+    def is_int(s):
+        try:
+            int(s)
+            return True
+        except ValueError:
+            return False
+
+    for s in str(num):
+        if is_int(s):
+            cnt+=1
+    
+    return cnt
