@@ -9,8 +9,8 @@ def calc_number_of_digit(num):
             return True
         except ValueError:
             return False
-
-    for s in str(num):
+    for i in range)
+    for s in reversed(str(num)):
         if is_int(s):
             cnt+=1
     
